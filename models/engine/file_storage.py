@@ -5,11 +5,20 @@
 import json
 from datetime import datetime
 from models.base_model import BaseModel
+from models.user import User
+from models.amenity import Amenity
+from models.city import City
+from models.place import Place
+from models.review import Review
+from models.state import State
 
 class FileStorage:
-    """ store the files """
+    """ store the file """
+
     __file_path = "file.json"
     __objects = {}
+     models.__all__ = {"BaseModel": BaseModel, "User": User, "State": State,
+        "Place": Place, "City": City, "Amenity": Amenity, "Review": Review}
 
     def all(self):
         return FileStorage.__objects
