@@ -25,15 +25,15 @@ def __init__(self, *args, **kwargs):
         self.updated_at = datetime.now()
         storage.new(self)
 
- def __str__(self):
+def __str__(self):
         return "[{}] ({}) {}".format(
             type(self).__name__, self.id, self.__dict__)
 
- def save(self):
+def save(self):
         self.updated_at = datetime.now()
         storage.save()
 
- def to_dict(self):
+def to_dict(self):
         new_dict = self.__dict__.copy()
         new_dict["__class__"] = type(self).__name__
         new_dict["created_at"] = self.created_at.isoformat()

@@ -17,7 +17,7 @@ class FileStorage:
 
     __file_path = "file.json"
     __objects = {}
-     models.__all__ = {"BaseModel": BaseModel, "User": User, "State": State,
+    models.__all__ = {"BaseModel": BaseModel, "User": User, "State": State,
         "Place": Place, "City": City, "Amenity": Amenity, "Review": Review}
 
     def all(self):
