@@ -1,0 +1,19 @@
+.places {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+article {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: #FF5A5F 1px;
+    border-radius: 4px;
+}
+
+.h2 {
+    font-size: 30px;
+    padding: 0%;
+    margin: auto;
+}
